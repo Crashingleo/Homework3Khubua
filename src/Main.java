@@ -84,17 +84,51 @@ public class Main {
     }
     public static void task6 () {
         System.out.println("Задача 6");
-
+        int Bananas = 5;
+        int Milk = 200;
+        int IceCream = 2;
+        int Egg = 4;
+        int BananaWeight = 80;
+        float MilkWeight = 1.05f;
+        int IceCreamWeight = 100;
+        int EggWeight = 70;
+        float TotalWeight = BananaWeight*Bananas + MilkWeight*Milk + IceCreamWeight*IceCream+ EggWeight*Egg;
+        float Kg = TotalWeight/1000;
+        System.out.println("Спортсмен примет "+ TotalWeight + " в граммах и " + Kg + " в киллограммах");
 
 
     }
     public static void task7 () {
         System.out.println("Задача 7");
-
+        int TotalWeight = 7;
+        int FirstProgram = 250;
+        int SecondProgram = 500;
+        int KgGr = TotalWeight*1000; //Переводим из кг в граммы
+        int FirstWay = KgGr/FirstProgram; // Похудеет если будет терять по 250 грамм
+        int SecondWay = KgGr/SecondProgram; // Похудеет если будет теряять по 500 грамм
+        System.out.println("Если спортсмен будет терять по 250 грамм в день, он похудеет за " + FirstWay + " Дней");
+        System.out.println("Если спортсмен будет терять по 500 грамм в день, он похудеет за " + SecondWay + " Дней");
+        int Average = (FirstWay+SecondWay)/2;
+        System.out.println("В среднем спорстмену понадобится "+ Average + " день чтобы похудеть");
 
     }
     public static void task8 () {
         System.out.println("Задача 8");
+        int MashaSalary    = 67760;
+        int DenisSalary    = 83690;
+        int KristinaSalary = 76230;
+        int MashaNew = MashaSalary + MashaSalary/10;
+        int DenisNew = DenisSalary + DenisSalary/10;
+        int KristinaNew = KristinaSalary + KristinaSalary/10;
+        int MashaDif = MashaNew*12 - MashaSalary*12;
+        int DenisDif = DenisNew*12 - DenisSalary*12;
+        int KristinaDif = KristinaNew*12 - KristinaSalary*12;
+        System.out.println("Маша теперь получает " + MashaNew + " рублей. Годовой доход вырос на " + MashaDif + " рублей");
+        System.out.println("Денис теперь получает " +  DenisNew+ " рублей. Годовой доход вырос на " + DenisDif+ " рублей");
+        System.out.println("Кристина теперь получает " + KristinaNew + " рублей. Годовой доход вырос на " + KristinaDif+ " рублей");
+
+
+
 
 
     }
